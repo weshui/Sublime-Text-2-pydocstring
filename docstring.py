@@ -52,7 +52,7 @@ def construct_docstring(declaration, indent = 0):
         lines.append("'''\n")
 
         for line in lines:
-            docstring += " " * indent + line
+            docstring += "\t" * (indent/4) + line
 
     except Exception as e:
         print(e)
